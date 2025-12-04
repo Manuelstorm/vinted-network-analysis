@@ -20,6 +20,16 @@ This phase models the graph and performs the analysis (Community Detection, Infl
 
 * **Main Script:** `asnm_analysis.py`
 
+## 📊 Graph Visualization & Exploration
+To interactively explore the network topology and verify the "Influential Nodes" (Seeds) found by the algorithms:
+
+1.  **Load the Graph:** Open the file `analized_graph_FINAL.gexf` using [Gephi Lite](https://lite.gephi.org/v1.0.1).
+2.  **Identify Influencers:** Navigate to the **"Data"** section (Data Laboratory) and sort the nodes by `Degree` to identify the users with the highest connections.
+3.  **Real-World Verification:** Copy the `ID` of a node/user. To inspect their actual Vinted profile, paste the ID into the following URL structure:
+    * `https://www.vinted.it/member/[INSERT_ID_HERE]`
+
+*(Note: The graph file is included in the repo or linked in the documentation).*
+
 ## 🛠️ Methodology & Activities
 
 * **Data Acquisition & Engineering:** Built a proprietary dataset through reverse engineering of Vinted APIs. Developed a resilient scraping pipeline with anti-bot handling (IP rotation, cookie injection) to reconstruct the social graph from bidirectional transactions and reviews.
