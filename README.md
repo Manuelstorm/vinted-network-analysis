@@ -3,6 +3,23 @@
 ## 📌 Project Overview
 This project transforms the Vinted marketplace into an analyzable social network to study trust, community formation, and reputation diffusion. By modeling user interactions, the project uncovers latent social structures within a C2C e-commerce platform.
 
+## 📂 Project Structure & Execution
+The project is divided into two main logical phases: Data Collection (Scraping) and Network Analysis.
+
+### **PHASE 1: Data Scraping**
+Located in the `Vinted_env` folder (scripts + CSVs).
+To reproduce the dataset creation, execute the scripts in the following strict order:
+
+1.  `scrape_test_FINAL.py`: Initializes the scraping process.
+2.  `dataset_construction.py`: Structures the raw data.
+3.  `get_recensioni_venditori_FINAL.py`: Retrieves feedback and transaction details.
+
+### **PHASE 2: Social Network Analysis**
+Located in the `ASNM_ANALYSIS_RESULTS` folder (script + CSVs).
+This phase models the graph and performs the analysis (Community Detection, Influence Maximization).
+
+* **Main Script:** `asnm_analysis.py`
+
 ## 🛠️ Methodology & Activities
 
 * **Data Acquisition & Engineering:** Built a proprietary dataset through reverse engineering of Vinted APIs. Developed a resilient scraping pipeline with anti-bot handling (IP rotation, cookie injection) to reconstruct the social graph from bidirectional transactions and reviews.
