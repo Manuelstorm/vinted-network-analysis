@@ -45,4 +45,4 @@ To interactively explore the network topology and verify the "Influential Nodes"
 * **Tools:** Gephi, Vinted-API (Custom Reverse Engineering)
 
 ---
-*For full details, please refer to the [Project Report PDF](./docs/Relazione_Progetto_ASNM.pdf).*
+*For full details, please refer to the [Project Report PDF](./docs/Relazione_Progetto_ASNM_.pdf).*
